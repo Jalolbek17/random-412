@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Student Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="server.js" defer></script>
+    <script src="index.js"defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="bg-gradient"></div>
+<div class="noise"></div>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<main class="container">
+    <header class="header">
+        <p class="subtitle">24-412</p>
+        <h1 class="title">Random Student</h1>
+    </header>
+
+    <div class="card-wrapper">
+        <div class="card-glow"></div>
+        <div class="card">
+            <div class="card-inner"></div>
+            <div id="student-display" class="student-display">
+                <p class="placeholder">Studentlar</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="pick-btn" class="btn">
+        <span class="btn-bg"></span>
+        <span class="btn-content">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/>
+        </svg>
+        <span class="btn-text">Random Student</span>
+      </span>
+    </button>
+
+    <footer class="footer">
+    </footer>
+</main>
+
+</body>
+</html>
