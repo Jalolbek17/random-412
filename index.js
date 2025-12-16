@@ -8,7 +8,7 @@ btn.addEventListener("click", () => {
     card.classList.add("loading");
     card.classList.remove("active");
 
-    fetch("http://localhost:1717/students")
+    fetch("https://random-412-24.vercel.app/students")
         .then(res => res.json())
         .then(data => {
             card.classList.remove("loading");
